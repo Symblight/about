@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Start-react-boilerplate
 
 Webpack 2 and React, Express - start project
@@ -83,3 +84,6 @@ Initial release
 #### 0.0.2
 
 Update version React and added ESLint
+=======
+# about
+>>>>>>> c5e15fb6189b7acc2d34eb1cefc7abf7396231e2
