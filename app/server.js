@@ -1,5 +1,6 @@
 import React from 'react';
-import { ServerStyleSheet } from 'styled-components';
+import { ServerStyleSheet, ThemeProvider } from 'styled-components';
+import theme from 'ui/themes/default';
 import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import Template from './template';
@@ -10,9 +11,11 @@ export default function serverRenderer() {
     const sheet = new ServerStyleSheet();
     const context = {};
     const markup = ReactDOMServer.renderToString(
-      <StaticRouter location={req.url} context={context}>
-        <App />
-      </StaticRouter>
+      <ThemeProvider theme={theme}>
+        <StaticRouter location={req.url} context={context}>
+          <App />
+        </StaticRouter>
+      </ThemeProvider>
     );
     const styleTags = sheet.getStyleTags();
     res.status(200).send(Template({

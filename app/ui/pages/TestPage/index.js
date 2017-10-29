@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import GenericTemplates from '../../templates/GenericTemplate';
-import Block from '../../molecules/block-component';
-import Button from '../../atoms/Button';
+import Block from 'ui/molecules/block-component';
+import Button from 'ui/atoms/Button';
+import GenericTemplates from 'ui/templates/GenericTemplate';
 
 class TestPage extends Component {
   render() {
     return (
       <GenericTemplates>
-        <Block title="Кнопка">
+        <Block title="Button">
           <Button>Test button</Button>
         </Block>
       </GenericTemplates>

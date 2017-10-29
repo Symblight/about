@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Label from 'ui/atoms/Label';
-import { Wrapper, Title } from './index.styled';
+import { Wrapper, Title, Content } from './index.styled';
 
 class BlockComponent extends Component {
   render() {
@@ -11,7 +11,7 @@ class BlockComponent extends Component {
         <Title>
           <Label>{title}</Label>
         </Title>
-        {children}
+        <Content>{children}</Content>
       </Wrapper>
     );
   }
