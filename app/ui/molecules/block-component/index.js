@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Label from 'ui/atoms/Label';
 import { Wrapper, Title } from './index.styled';
 
 class BlockComponent extends Component {
@@ -7,7 +8,9 @@ class BlockComponent extends Component {
     const { children, title } = this.props;
     return (
       <Wrapper>
-        <Title>{title}</Title>
+        <Title>
+          <Label>{title}</Label>
+        </Title>
         {children}
       </Wrapper>
     );

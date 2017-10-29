@@ -33,5 +33,12 @@
     "linebreak-style": [
       "error",
       "windows"
-    ]
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["app"]
+        }
+      }
+    }
 }

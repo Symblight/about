@@ -33,6 +33,10 @@ module.exports = [{
     rules: rules.config
   },
   resolve: {
+    modules: [
+      path.resolve('./app'),
+      path.resolve('./node_modules')
+    ],
     extensions: ['.js', '.jsx'],
   },
   plugins: plugins.config,
@@ -51,6 +55,10 @@ module.exports = [{
   },
   devtool: 'source-map',
   resolve: {
+    modules: [
+      path.resolve('./app'),
+      path.resolve('./node_modules')
+    ],
     extensions: ['.js', '.jsx']
   },
   externals: [nodeExternals()],
