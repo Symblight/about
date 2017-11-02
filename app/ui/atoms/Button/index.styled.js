@@ -6,7 +6,6 @@ export const Button = styled.div`
     margin:0 auto;
     padding:10px 30px;
     border: 0;
-    border-radius: 4px;
     display: inline-block;
     background-color: ${palette(1)};
     color: ${palette('grayscale', 0, true)};

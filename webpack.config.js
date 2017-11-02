@@ -45,11 +45,11 @@ module.exports = [{
   name: 'server',
   target: 'node',
   entry: [
-    path.join(__dirname, 'app/server.js'),
+    path.join(__dirname, 'app/render.js'),
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'server.js',
+    filename: 'render.js',
     libraryTarget: 'commonjs2',
     publicPath: '/',
   },
