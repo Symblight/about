@@ -9,11 +9,12 @@ export const Wrapper = styled.div`
 
 export const Title = styled.div`
     background-color: ${props => props.theme.MainTheme.primary[1]};
-    color: ${props => props.theme.MainTheme.white[3]};   
+    color: ${props => props.theme.MainTheme.white[1]};   
     padding: 3px;
     text-align: center;
 `;
 
 export const Content = styled.div`
     padding: 15px;
+    text-align: center;
 `;

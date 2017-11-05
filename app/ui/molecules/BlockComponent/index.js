@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Label from 'ui/atoms/Label';
 import { Wrapper, Title, Content } from './index.styled';
 
-class BlockComponent extends Component {
+class BlockComponent extends PureComponent {
   render() {
     const { children, title } = this.props;
     return (

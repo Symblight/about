@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Button = styled.div`
-    display: inline-block;
     padding: 0 2rem;
     height: 3rem;
     line-height: 3rem;
@@ -13,12 +12,4 @@ export const Button = styled.div`
     white-space: nowrap;
     transition: background .2s,color .2s;
     cursor: pointer;
-    color: ${props => props.theme.MainTheme.white[1]};
-    background-color: ${props => props.theme.MainTheme.primary[0]};
-  
-
-    &:hover {
-        background-color: ${props => props.theme.MainTheme.primary[1]};
-        cursor: pointer;
-    }
 `;
