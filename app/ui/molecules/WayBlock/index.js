@@ -1,16 +1,23 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-class WayBlock extends Component {
+import Block from 'ui/atoms/Block';
+import Circle from 'ui/atoms/Circle';
+
+class WayBlock extends PureComponent {
   render() {
+    const { children } = this.props;
     return (
-      <div />
+      <div>
+        <Circle />
+        <Block>{children}</Block>
+      </div>
     );
   }
 }
 
 WayBlock.propTypes = {
-
+  children: PropTypes.node.isRequired
 };
 
 export default WayBlock;

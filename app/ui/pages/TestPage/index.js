@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Block from 'ui/molecules/block-component';
+import Block from 'ui/molecules/BlockComponent';
 import Button from 'ui/atoms/Button';
 import Label from 'ui/atoms/Label';
+import WayBlock from 'ui/molecules/WayBlock';
 import GenericTemplates from 'ui/templates/GenericTemplate';
 
 class TestPage extends Component {
@@ -13,6 +14,9 @@ class TestPage extends Component {
         </Block>
         <Block title="Label">
           <Label>Label</Label>
+        </Block>
+        <Block title="Way Block">
+          <WayBlock>Way Block</WayBlock>
         </Block>
       </GenericTemplates>
     );
