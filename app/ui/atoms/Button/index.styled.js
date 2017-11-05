@@ -10,6 +10,5 @@ export const Button = styled.div`
     text-transform: uppercase;
     text-decoration: none !important;
     white-space: nowrap;
-    transition: background .2s,color .2s;
     cursor: pointer;
 `;

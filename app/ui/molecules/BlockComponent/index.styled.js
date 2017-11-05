@@ -12,6 +12,7 @@ export const Title = styled.div`
     color: ${props => props.theme.MainTheme.white[1]};   
     padding: 3px;
     text-align: center;
+    font-weight: 600;
 `;
 
 export const Content = styled.div`

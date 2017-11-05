@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Button from 'ui/atoms/Button';
 import Label from 'ui/atoms/Label';
 
 import PrimaryButton from 'ui/molecules/PrimaryButton';
@@ -8,12 +7,12 @@ import Block from 'ui/molecules/BlockComponent';
 import WayBlock from 'ui/molecules/WayBlock';
 import BlockBorder from 'ui/molecules/BlockBorder';
 import TextFieldButton from 'ui/molecules/TextFieldButton';
-import GenericTemplates from 'ui/templates/GenericTemplate';
+import PageTemplates from 'ui/templates/PageTemplate';
 
 class TestPage extends Component {
   render() {
     return (
-      <GenericTemplates>
+      <PageTemplates>
         <Block title="Primary button">
           <PrimaryButton>Primary button</PrimaryButton>
         </Block>
@@ -29,7 +28,7 @@ class TestPage extends Component {
         <Block title="Text field button">
           <TextFieldButton button="send" placeholder="" />
         </Block>
-      </GenericTemplates>
+      </PageTemplates>
     );
   }
 }

@@ -1,21 +1,21 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { LabelStyled } from './index.styled';
+import { } from './index.styled';
 
-class Label extends PureComponent {
+class Link extends PureComponent {
   render() {
     const { children } = this.props;
     return (
-      <LabelStyled>
+      <span>
         {children}
-      </LabelStyled>
+      </span>
     );
   }
 }
 
-Label.propTypes = {
+Link.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default Label;
+export default Link;
