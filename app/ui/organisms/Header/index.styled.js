@@ -38,8 +38,14 @@ export const Title = styled.span`
     overflow: hidden;
     border-right: .10em solid;
     animation: caret 1s steps(1) infinite;
+    filter: alpha(opacity=50);
 
     @keyframes caret {
         50% { border-right-color: transparent; }
+    }
+
+    &::selection {   
+        background: ${props => props.theme.MainTheme.primary[1]};
+        color: inherit;
     }
 `;

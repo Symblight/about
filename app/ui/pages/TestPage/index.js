@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Label from 'ui/atoms/Label';
+import Link from 'ui/atoms/Link';
 
 import PrimaryButton from 'ui/molecules/PrimaryButton';
 import Block from 'ui/molecules/BlockComponent';
@@ -24,6 +25,9 @@ class TestPage extends Component {
         </Block>
         <Block title="Block Border">
           <BlockBorder>Block border</BlockBorder>
+        </Block>
+        <Block title="Link">
+          <Link>Link!</Link>
         </Block>
         <Block title="Text field button">
           <TextFieldButton button="send" placeholder="" />

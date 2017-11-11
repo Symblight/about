@@ -5,17 +5,17 @@ export const Wrapper = styled.div`
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
-    background-color: ${props => props.theme.MainTheme.grey[0]};
 
     @media screen and (max-width: 640px) {
         padding-top: 3.25rem;
     }
 `;
 
-export const Content = styled.section`
+export const Content = styled.main`
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
+    max-width: 70vw;
     padding-bottom: 2rem;
     background-color: ${props => props.theme.MainTheme.white[0]};
 `;
