@@ -4,20 +4,18 @@ import PropTypes from 'prop-types';
 import { WrapCircle, Line } from './index.styled';
 
 class Circle extends PureComponent {
-  render() {
-    const { now } = this.props;
 
+  static propTypes = {
+    now: PropTypes.bool
+  }
+
+  render() {
     return (
-      <div >
-  
+      <div>
         <WrapCircle />
       </div>
     );
   }
 }
-
-Circle.propTypes = {
-  now: PropTypes.bool
-};
 
 export default Circle;

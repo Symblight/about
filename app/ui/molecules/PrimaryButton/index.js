@@ -7,8 +7,13 @@ import { PrimaryButtonWrap } from './index.styled';
 
 class PrimaryButton extends PureComponent {
 
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  }
+
   render() {
     const { children } = this.props;
+
     return (
       <PrimaryButtonWrap>
         <Button>{children}</Button>
@@ -16,9 +21,5 @@ class PrimaryButton extends PureComponent {
     );
   }
 }
-
-PrimaryButton.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default PrimaryButton;

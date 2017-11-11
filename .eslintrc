@@ -4,7 +4,7 @@
       "sourceType": "module",
       "allowImportExportEverywhere": true
     },
-    "extends": "airbnb",
+    "extends": ["airbnb","plugin:react/recommended"],
     "env": {
       "browser": true,
       "node": true
@@ -23,6 +23,8 @@
       "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
       "react/prefer-stateless-function": "off",
       "react/jsx-indent": "warn",
+      "react/jsx-uses-vars": ["warn"],
+      "react/jsx-uses-react": 1,
       "linebreak-style": 0
     },
     "plugins": [

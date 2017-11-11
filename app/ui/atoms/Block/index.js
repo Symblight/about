@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 import { Wrapper } from './index.styled';
 
 class Block extends PureComponent {
+
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  }
+
   render() {
     const { children } = this.props;
 
@@ -12,9 +17,5 @@ class Block extends PureComponent {
     );
   }
 }
-
-Block.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default Block;

@@ -7,8 +7,14 @@ import Circle from 'ui/atoms/Circle';
 import { Wrapper } from './index.styled';
 
 class WayBlock extends PureComponent {
+
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  }
+
   render() {
     const { children } = this.props;
+
     return (
       <Wrapper>
         <div>
@@ -19,9 +25,5 @@ class WayBlock extends PureComponent {
     );
   }
 }
-
-WayBlock.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default WayBlock;
