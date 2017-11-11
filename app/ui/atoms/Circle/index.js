@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { WrapCircle, Line } from './index.styled';
+import { WrapCircle } from './index.styled';
 
 class Circle extends PureComponent {
 

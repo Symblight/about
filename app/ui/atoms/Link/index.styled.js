@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const Highlight = styled.span`
+export const HighlightLink = styled.a`
     color: inherit; 
 `;

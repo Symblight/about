@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Block from 'ui/atoms/Block';
 import Circle from 'ui/atoms/Circle';
 
-import { Wrapper } from './index.styled';
+import { Wrapper, Article, Description } from './index.styled';
 
 class WayBlock extends PureComponent {
 
@@ -17,10 +17,12 @@ class WayBlock extends PureComponent {
 
     return (
       <Wrapper>
-        <div>
+        <Article>
           <Circle />
-        </div>
-        <Block>{children}</Block>
+          <Description>
+            <Block>{children}</Block>
+          </Description>
+        </Article>
       </Wrapper>
     );
   }
