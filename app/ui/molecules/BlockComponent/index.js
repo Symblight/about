@@ -4,8 +4,15 @@ import Label from 'ui/atoms/Label';
 import { Wrapper, Title, Content } from './index.styled';
 
 class BlockComponent extends PureComponent {
+
+  static propTypes = {
+    children: PropTypes.node.isRequired,
+    title: PropTypes.string.isRequired
+  }
+
   render() {
     const { children, title } = this.props;
+
     return (
       <Wrapper>
         <Title>
@@ -16,10 +23,5 @@ class BlockComponent extends PureComponent {
     );
   }
 }
-
-BlockComponent.propTypes = {
-  children: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired
-};
 
 export default BlockComponent;

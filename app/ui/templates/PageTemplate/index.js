@@ -7,8 +7,13 @@ import { Wrapper, Content } from './index.styled';
 
 class PageTemplate extends Component {
 
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  }
+
   render() {
     const { children } = this.props;
+
     return (
       <Wrapper>
         <Header />
@@ -18,9 +23,5 @@ class PageTemplate extends Component {
     );
   }
 }
-
-PageTemplate.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default PageTemplate;

@@ -5,6 +5,10 @@ import { Button } from './index.styled';
 
 class FlatButton extends PureComponent {
 
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  }
+
   render() {
     const { children } = this.props;
     return (
@@ -12,9 +16,5 @@ class FlatButton extends PureComponent {
     );
   }
 }
-
-FlatButton.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default FlatButton;

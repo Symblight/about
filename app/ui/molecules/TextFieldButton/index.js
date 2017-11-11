@@ -5,8 +5,15 @@ import TextField from 'ui/atoms/TextField';
 import Button from 'ui/atoms/Button';
 
 class TextFieldButton extends Component {
+
+  static propTypes = {
+    button: PropTypes.node.isRequired,
+    placeholder: PropTypes.string.isRequired,
+  }
+
   render() {
     const { button, placeholder } = this.props;
+
     return (
       <div>
         <TextField placeholder={placeholder} />
@@ -15,10 +22,5 @@ class TextFieldButton extends Component {
     );
   }
 }
-
-TextFieldButton.propTypes = {
-  button: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-};
 
 export default TextFieldButton;

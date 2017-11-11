@@ -1,21 +1,22 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { } from './index.styled';
+import { Highlight } from './index.styled';
 
 class Link extends PureComponent {
+
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  }
+
   render() {
     const { children } = this.props;
     return (
       <span>
-        {children}
+        <Highlight>{children}</Highlight>
       </span>
     );
   }
 }
-
-Link.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default Link;

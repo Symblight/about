@@ -6,6 +6,11 @@ import Block from 'ui/atoms/Block';
 import { Border } from './index.styled';
 
 class BlockBorder extends PureComponent {
+
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  }
+
   render() {
     const { children } = this.props;
 
@@ -16,9 +21,5 @@ class BlockBorder extends PureComponent {
     );
   }
 }
-
-BlockBorder.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default BlockBorder;
