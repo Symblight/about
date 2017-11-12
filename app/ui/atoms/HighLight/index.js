@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { HighlightLink } from './index.styled';
+import { HighlightWrap } from './index.styled';
 
-class Link extends PureComponent {
+class HighLight extends PureComponent {
 
   static propTypes = {
     children: PropTypes.node.isRequired
@@ -11,13 +11,11 @@ class Link extends PureComponent {
 
   render() {
     const { children } = this.props;
-    
+
     return (
-      <span>
-        <HighlightLink href="#" >{children}</HighlightLink>
-      </span>
+      <HighlightWrap>{children}</HighlightWrap>
     );
   }
 }
 
-export default Link;
+export default HighLight;

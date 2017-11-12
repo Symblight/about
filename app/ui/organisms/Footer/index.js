@@ -10,7 +10,7 @@ class Footer extends PureComponent {
       <Wrapper>
         <Content>
           <Label>React</Label>
-          <Label>Copyright</Label>
+          <Label>&copy; 2017 Alexey</Label>
           <Label>version 1.1</Label>
         </Content>
       </Wrapper>

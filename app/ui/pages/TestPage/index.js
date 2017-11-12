@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Label from 'ui/atoms/Label';
 import Link from 'ui/atoms/Link';
+import HighLightText from 'ui/atoms/HighLight';
 
 import PrimaryButton from 'ui/molecules/PrimaryButton';
 import Block from 'ui/molecules/BlockComponent';
@@ -31,6 +32,21 @@ class TestPage extends Component {
         </Block>
         <Block title="Text field button">
           <TextFieldButton button="send" placeholder="" />
+        </Block>
+        <Block title="Icon">
+          <h3><HighLightText> Where is it? I dont see it! </HighLightText></h3>
+        </Block>
+        <Block title="Input mail">
+          <h3><HighLightText> Where is it? I dont see it! </HighLightText></h3>
+        </Block>
+        <Block title="TextArea">
+          <h3><HighLightText> Where is it? I dont see it! </HighLightText></h3>
+        </Block>
+        <Block title="Panel color theme">
+          <h3><HighLightText> Where is it? I dont see it! </HighLightText></h3>
+        </Block>
+        <Block title="Photo">
+          <h3><HighLightText> Where is it? I dont see it! </HighLightText></h3>
         </Block>
       </PageTemplates>
     );

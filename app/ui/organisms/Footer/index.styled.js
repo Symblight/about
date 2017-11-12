@@ -10,6 +10,6 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-around;
   font-weight: 600;
-  margin-left: 10rem;
-  margin-right:10rem;
+  width: 956px;
+  margin: 0 auto;
 `;
