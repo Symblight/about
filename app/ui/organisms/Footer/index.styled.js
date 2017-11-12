@@ -6,7 +6,10 @@ export const Wrapper = styled.footer`
 `;
 
 export const Content = styled.div`
-  color: ${props => props.theme.MainTheme.white[0]};
+  color: ${props => props.theme.MainTheme.grey[5]};
   display: flex;
   justify-content: space-around;
+  font-weight: 600;
+  margin-left: 10rem;
+  margin-right:10rem;
 `;

@@ -21,7 +21,7 @@ class TestPage extends Component {
           <Label>Label</Label>
         </Block>
         <Block title="Way Block">
-          <WayBlock>Way Block</WayBlock>
+          <WayBlock title="My way">Well, My name is Alexey and I am Web developer. I finished college in 2016 and now I work in a SENLA</WayBlock>
         </Block>
         <Block title="Block Border">
           <BlockBorder>Block border</BlockBorder>

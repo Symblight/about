@@ -20,9 +20,21 @@ export const Article = styled.article`
     display: flex;
     margin-bottom: 30px;
     height: 100%;
+    max-width: 600px;
+    text-align: justify;
 `;
 
 export const Description = styled.div`
     margin-left: 55px;
     background-color: ${props => props.theme.MainTheme.white[0]};
+    color: ${props => props.theme.MainTheme.primary[4]};
+    font-weight: 600;
+`;
+
+export const Title = styled.div`
+    font-size:1.4rem;
+    background-color: ${props => props.theme.MainTheme.primary[0]};
+    color: ${props => props.theme.MainTheme.white[0]};
+    padding: 5px;
+    text-align: center;
 `;
