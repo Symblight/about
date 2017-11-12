@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     background-color: #F5F5F5;
     margin: 25px;
+    max-width: 70vw;
 `;
 
 export const Title = styled.div`

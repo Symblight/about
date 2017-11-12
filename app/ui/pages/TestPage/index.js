@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Label from 'ui/atoms/Label';
+import Link from 'ui/atoms/Link';
 
 import PrimaryButton from 'ui/molecules/PrimaryButton';
 import Block from 'ui/molecules/BlockComponent';
@@ -20,10 +21,13 @@ class TestPage extends Component {
           <Label>Label</Label>
         </Block>
         <Block title="Way Block">
-          <WayBlock>Way Block</WayBlock>
+          <WayBlock title="My way">Well, My name is Alexey and I am Web developer. I finished college in 2016 and now I work in a SENLA</WayBlock>
         </Block>
         <Block title="Block Border">
           <BlockBorder>Block border</BlockBorder>
+        </Block>
+        <Block title="Link">
+          <Link>Link!</Link>
         </Block>
         <Block title="Text field button">
           <TextFieldButton button="send" placeholder="" />

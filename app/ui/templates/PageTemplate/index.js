@@ -17,7 +17,9 @@ class PageTemplate extends Component {
     return (
       <Wrapper>
         <Header />
-        <Content>{children}</Content>
+        <Content>
+          {children}
+        </Content>
         <Footer />
       </Wrapper>
     );

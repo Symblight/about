@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { Highlight } from './index.styled';
+import { HighlightLink } from './index.styled';
 
 class Link extends PureComponent {
 
@@ -13,7 +13,7 @@ class Link extends PureComponent {
     const { children } = this.props;
     return (
       <span>
-        <Highlight>{children}</Highlight>
+        <HighlightLink href="#" >{children}</HighlightLink>
       </span>
     );
   }
